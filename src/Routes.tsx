@@ -2,13 +2,18 @@ import { createBrowserRouter } from "react-router";
 import App from "./App";
 import Play from "./Play";
 
-export const router = createBrowserRouter([
+export const router = createBrowserRouter(
+  [
+    {
+      path: "/",
+      element: <App />,
+    },
+    {
+      path: "/play/:gameId",
+      element: <Play />,
+    },
+  ],
   {
-    path: "/",
-    element: <App />,
+    basename: "/GameHub",
   },
-  {
-    path: "/play/:gameId",
-    element: <Play />,
-  },
-]);
+);
