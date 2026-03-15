@@ -32,6 +32,6 @@ function gameDiscoveryPlugin() {
 
 // https://vite.dev/config/
 export default defineConfig({
-  plugins: [react(), tailwindcss(), gameDiscoveryPlugin()],
   base: "/GameHub/",
+  plugins: [react(), tailwindcss(), gameDiscoveryPlugin()],
 });
