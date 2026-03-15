@@ -34,7 +34,7 @@ export default function Play() {
 
       <div className="flex-1 w-full relative">
         <iframe
-          src={`/Games/${gameId}/index.html`}
+          src={`${import.meta.env.BASE_URL}Games/${gameId}/index.html`}
           className="absolute inset-0 w-full h-full border-none"
           title={gameId}
           allow="fullscreen"

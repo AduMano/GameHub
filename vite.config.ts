@@ -14,7 +14,8 @@ function gameDiscoveryPlugin() {
     },
     load(id: string) {
       if (id === "\0virtual:games") {
-        const gamesDir = path.resolve(__dirname, "public/games");
+        // Matches the exact uppercase 'Games' directory
+        const gamesDir = path.resolve(__dirname, "public/Games");
         let games: string[] = [];
 
         if (fs.existsSync(gamesDir)) {
@@ -30,8 +31,7 @@ function gameDiscoveryPlugin() {
   };
 }
 
-// https://vite.dev/config/
 export default defineConfig({
-  base: "/GameHub/",
   plugins: [react(), tailwindcss(), gameDiscoveryPlugin()],
+  base: "/GameHub/",
 });
