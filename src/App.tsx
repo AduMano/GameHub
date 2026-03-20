@@ -205,7 +205,7 @@ export default function App() {
             </div>
             <div>
               <h1 className="text-4xl font-extrabold text-slate-50 tracking-tight">
-                Game<span className="text-indigo-400">Hub</span>
+                UX Game<span className="text-indigo-400">Hub</span>
               </h1>
               <p className="text-slate-400 font-medium mt-1 text-sm">
                 Select a game to start playing
