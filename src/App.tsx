@@ -2,27 +2,26 @@ import { useState, useMemo } from "react";
 import { Link } from "react-router";
 import { games as realGames } from "virtual:games";
 
-const mockTitles = [
-  "Neon Drift",
-  "Cyber Samurai",
-  "Void Runner",
-  "Pixel Forge",
-  "Starship Command",
-  "Abyssal Descent",
-  "Crystal Quest",
-  "Rogue Enigma",
-  "Mech Arena",
-  "Shadow Tactics",
-  "Chrono Break",
-  "Astro Miner",
-  "Quantum Paradox",
-  "Solar Flare",
-  "Galactic Drift",
-  "Titan Fall",
-  "Echoes of Mana",
-  "Blade Runner",
-  "Zero Gravity",
-];
+const mockTitles = ["UX Bird"];
+// "Neon Drift",
+// "Cyber Samurai",
+// "Void Runner",
+// "Pixel Forge",
+// "Starship Command",
+// "Abyssal Descent",
+// "Crystal Quest",
+// "Rogue Enigma",
+// "Mech Arena",
+// "Shadow Tactics",
+// "Chrono Break",
+// "Astro Miner",
+// "Quantum Paradox",
+// "Solar Flare",
+// "Galactic Drift",
+// "Titan Fall",
+// "Echoes of Mana",
+// "Blade Runner",
+// "Zero Gravity",
 
 const displayGames = [...new Set([...realGames, ...mockTitles])];
 
